@@ -5053,13 +5053,17 @@ base::-moz-progress-bar,
 }
 
 .list-group {
+    font-family:Arial;
+    font-size: 9pt;
+    letter-spacing: 0.5px;
   padding-left: 0;
   margin-bottom: 0;
 }
 
 .list-group-item {
   position: relative;
-  display: block;
+    marging: 10px;
+      display: block;
     width: 200px;
   padding: 0.75rem 1.25rem;
   margin-bottom: -5px;
@@ -5071,6 +5075,7 @@ base::-moz-progress-bar,
 .list-group-item:first-child {
   border-top-right-radius: 0.25rem;
   border-top-left-radius: 0.25rem;
+
 }
 
 .list-group-item:last-child {
