@@ -389,7 +389,7 @@ blockquote {
 }
 
 a {
-  color: #0275d8;
+  color: orange;
   text-decoration: none;
 }
 
@@ -5062,14 +5062,14 @@ base::-moz-progress-bar,
 
 .list-group-item {
   position: relative;
-    marging: 10px;
-      display: block;
-    width: 200px;
+  marging: 10px;
+  display: block;
+  width: 200px;
   padding: 0.75rem 1.25rem;
   margin-bottom: -5px;
   background-color: steelblue;
   border: 0px solid #ddd;
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .list-group-item:first-child {
