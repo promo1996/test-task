@@ -1,0 +1,84 @@
+.new{
+    background-color: orange;
+    margin-left: 200px;
+    margin-top: -50px;
+    height: 53px;
+    width: 1040px;
+
+}
+
+.promo{
+    line-height: 50px;
+    font-size: 15px;
+    margin-left: 25px;
+}
+
+.kol-users{
+    font-size: 9px;
+
+    line-height: 130px;
+
+}
+
+.container-1{
+width: 300px;
+vertical-align: middle;
+    margin-left: 400px;
+    margin-top: -40px;
+white-space: nowrap;
+position: relative;
+}
+
+.container-1 input#search{
+width: 230px;
+height: 32px;
+background: wheat;
+border: none;
+font-size: 10pt;
+float: left;
+color: #63717f;
+padding-left: 30px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 10px;
+}
+
+.container-1 input#search::-webkit-input-placeholder {
+color: black;
+}
+
+  .container-1 input#search:-moz-placeholder { /* Firefox 18- */
+  color: #65737e;
+  }
+
+
+
+  .container-1 input#search::-moz-placeholder {  /* Firefox 19+ */
+  color: #65737e;
+
+  }
+
+
+
+  .container-1 input#search:-ms-input-placeholder {
+  color: #65737e;
+
+  }
+
+.container-1 .icon{
+position: absolute;
+top:50%;
+margin-left: 10px;
+margin-top: -9px;
+z-index: 1;
+color: #4f5b66;
+}
+
+.container-1 input#search:hover, .container-1 input#search:focus, .container-1 input#search:active{
+outline:none;
+background: navajowhite;
+}
+
+.box{
+
+}
