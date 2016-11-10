@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet"/>
+    <link href="css/jquery.modal.css" rel="stylesheet" />
     <link href="css/mycss.css" rel="stylesheet" />
-    <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:regular" type="text/css" >
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Junge" type="text/css">
     <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
     <title>User list</title>
 </head>
 <body>
+<script type="javascript" src="js/myjs.js"></script>
 <div style="width:200px; height:50px; background-color:cornflowerblue">
     <h5> Open circles</h5>
     <div class="new">
@@ -24,22 +27,16 @@
                 </div>
             </div>
         </div>
-        <div class="buttond" ><a style="color: orange" href="https://vk.com/windows_like"  >TABLE FILTER </a></div>
+        <div class="buttond" ><a data-toggle="modal" style="color: orange" href="new.html" data-target="#modal"  >TABLE FILTER </a></div>
 <p></p>
+
         <table class="table table-bordered">
-            <th class = "head-table">E-mail</th>
+            <th class = "head-table" > <a href="#modal" rel="modal:open">E-mail</a></th>
             <th class = "head-table">Name</th>
             <th class = "head-table">Type</th>
             <th class = "head-table">Company</th>
             <th class = "head-table">Country</th>
             <th class = "head-table">Subscription</th>
-            <!--<tr >leffler</tr>
-            <tr >...</tr>
-            <tr >...</tr>
-            <tr >...</tr>
-            <tr >...</tr>-->
-
-            <!-- On cells (`td` or `th`) -->
             <tr>
                 <td class = "font">leffler.karelle@marcellus.net</td>
                 <td class = "font">Lewis Taylor</td>
@@ -131,6 +128,40 @@
         <div class="headered"></div>
 
 
-    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-</body>
+
+<div class="modal" id="modal" style="display:none;" showClose=false>
+
+    <p class="edit">EDIT %NAME%</p>
+    <div class="unique">unique ID - 435325325</div>
+    <br>
+    <form role="form" class="form-inline">
+        <div class="form-group">
+            <p><b class="unique">E-MAIL</b><br>
+            <input type="email" class="form-control" size="51" id="email" placeholder="leffler.karelle@marcellus.net">
+        </div>
+        <div class="form-group">
+            <p><b class="unique">FIRST NAME</b><br>
+            <input type="password" class="form-control" size="21" id="first" placeholder="Lewis"><br>
+        </div>
+        <div class="form-group">
+            <p><b class="unique">LAST NAME</b><br>
+            <input type="password" class="form-control" size="21" id="last" placeholder="Taylor">
+        </div>
+        <div class="form-group">
+            <p><b class="unique">COUNTRY</b><br>
+                <input type="email" class="form-control" size="51" id="country" placeholder="leffler.karelle@marcellus.net">
+        </div>
+        <div class="form-group">
+            <p><b class="unique">COMPANY</b><br>
+                <input type="email" class="form-control" size="51" id="company" placeholder="leffler.karelle@marcellus.net">
+        </div>
+
+    </form>
+</div>
+
+
+<script  src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/jquery.modal.js" type="text/javascript" charset="utf-8"></script>
+<script type="javascript" src="js/bootstrap.js"></script>
+   </body>
 </html>
