@@ -53,6 +53,7 @@ template,
 }
 
 a {
+    color:orange;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
@@ -296,6 +297,7 @@ textarea {
   }
   .table td,
   .table th {
+
     background-color: #fff !important;
 
   }
@@ -390,12 +392,10 @@ blockquote {
 }
 
 a {
-  color: orange;
   text-decoration: none;
 }
 
 a:focus, a:hover {
-  color: #014c8c;
   text-decoration: underline;
 }
 
@@ -405,12 +405,10 @@ a:focus {
 }
 
 a:not([href]):not([tabindex]) {
-  color: inherit;
   text-decoration: none;
 }
 
 a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
-  color: inherit;
   text-decoration: none;
 }
 
@@ -5071,6 +5069,7 @@ base::-moz-progress-bar,
   background-color: steelblue;
   border: 0px solid #ddd;
   color: #ffffff;
+    height: 55px;
 }
 
 .list-group-item:first-child {

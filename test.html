@@ -15,11 +15,14 @@
 </head>
 <body>
 <script type="javascript" src="js/myjs.js"></script>
+
 <div style="width:200px; height:50px; background-color:cornflowerblue">
-    <h5> Open circles</h5>
+
+    <h5>   <img src="img/logo.png" width="35px" height="35px" style="margin-left: -35px">  Open circles</h5>
     <div class="new">
         <div class = "promo">
-        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>&nbsp; Users List
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i><div class="users">Users List</div>
+            <div class="count-users">874 users</div>
             <div class="box">
                 <div class="container-1">
                     <span class="icon"><i class="fa fa-search"></i></span>
@@ -27,16 +30,18 @@
                 </div>
             </div>
         </div>
-        <div class="buttond" ><a data-toggle="modal" style="color: orange" href="new.html" data-target="#modal"  >TABLE FILTER </a></div>
-<p></p>
+        <div class="buttond" ><a href="#modal" rel="modal:open">TABLE FILTER </a></div>
+        <div class="dale">Dale McCormick<i class="fa fa-angle-down fa-1x" aria-hidden="true"></i></div>
+       <p></p>
+        <br>
 
         <table class="table table-bordered">
             <th class = "head-table" > <a href="#modal" rel="modal:open">E-mail</a></th>
-            <th class = "head-table">Name</th>
-            <th class = "head-table">Type</th>
-            <th class = "head-table">Company</th>
-            <th class = "head-table">Country</th>
-            <th class = "head-table">Subscription</th>
+            <th class = "head-table"><a href="#modal" rel="modal:open">Name</a></th>
+            <th class = "head-table"><a href="#modal" rel="modal:open">Type</a></th>
+            <th class = "head-table"><a href="#modal" rel="modal:open">Company</a></th>
+            <th class = "head-table"><a href="#modal" rel="modal:open">Country</a></th>
+            <th class = "head-table"><a href="#modal" rel="modal:open">Subscription</a></th>
             <tr>
                 <td class = "font">leffler.karelle@marcellus.net</td>
                 <td class = "font">Lewis Taylor</td>
@@ -110,7 +115,8 @@
                 <td class = "font">11/02/2016</th>
             </tr>
         </table>
-        <div class="show-more" ><a style="color: orange" href="https://vk.com/windows_like"  >SHOW MORE </a></div>
+
+        <div class="show-more" ><a style="color: orange" href="https://vk.com/promo1996"  >SHOW MORE </a></div>
     </div>
     </div>
     <div class="list-group">
@@ -124,11 +130,7 @@
         <a class="list-group-item" href="#"><i class="fa fa-folder fa-fw" aria-hidden="true"></i>&nbsp; VIDEO ANALYTICS<p></p></a>
     </div>
     <div class = "down"></div>
-
         <div class="headered"></div>
-
-
-
 <div class="modal" id="modal" style="display:none;" showClose=false>
 
     <p class="edit">EDIT %NAME%</p>
@@ -149,13 +151,48 @@
         </div>
         <div class="form-group">
             <p><b class="unique">COUNTRY</b><br>
-                <input type="email" class="form-control" size="51" id="country" placeholder="leffler.karelle@marcellus.net">
+                <input type="email" class="form-control" size="51" id="country" placeholder="Rwanda">
         </div>
         <div class="form-group">
             <p><b class="unique">COMPANY</b><br>
-                <input type="email" class="form-control" size="51" id="company" placeholder="leffler.karelle@marcellus.net">
+                <input type="email" class="form-control" size="51" id="company" placeholder="Company name">
         </div>
+        <div class="form-group">
+            <p><b class="unique">TYPE</b><br>
+                <select class="form-control" style="width: 214px" id="type">
+                    <option>Business</option>
+                    <option>Private</option>
+                </select>
+        </div>
+        <div class="form-group">
+            <p><b class="unique">LEVEL</b><br>
 
+                <select class="form-control" style="width: 214px" id="level">
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                </select>
+        </div>
+        <div class="form-group">
+            <p><b class="unique">VALIDETED</b><br>
+                <input type="password" class="form-control" size="21" id="val" placeholder="Yes"><br>
+        </div>
+        <div class="form-group">
+            <p><b class="unique">COINS</b><br>
+                <input type="password" class="form-control" size="21" id="coins" placeholder="3000">
+        </div>
+        <p></p>
+        <br>
+        <div class="unique">Subscription type - 99.99</div><br>
+        <div class="unique">Subscription date - 11/02/2016</div>
+        <div class="my-buttons">
+            <button type="button" class="btn btn-default" >RESET PASSWORD</button>
+            <button type="button" class="btn btn-default">REVOKE ACCESS</button>
+            <button type="button" class="btn btn-success">SAVE</button>
+        </div>
     </form>
 </div>
 
